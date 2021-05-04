@@ -42,7 +42,7 @@ Mobile:
 
 ### Links
 
-- Solution URL: [Click here!]()
+- Solution URL: [Click here!](https://www.frontendmentor.io/solutions/3column-preview-card-component-sassflexbox-RSsIiLl6a)
 - Live Site URL: [Click here!](https://cranky-leakey-02dd69.netlify.app/)
 
 ## My process
