@@ -1,0 +1,97 @@
+:root {
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color-very-light-gray: hsl(0, 0%, 95%);
+  --icon-height: 4.4rem; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.5rem;
+  min-height: 100vh;
+  font-family: 'Lexend Deca', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*
+    || CARD
+*/
+.card {
+  max-width: 92rem;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex; }
+  @media only screen and (max-width: 48.56rem) {
+    .card {
+      flex-direction: column; } }
+  .card__item {
+    flex: 30.6rem;
+    padding: 4.8rem; }
+  .card__item--sedans {
+    background-color: var(--color-bright-orange); }
+    .card__item--sedans-icon {
+      background-image: url(../img/icon-sedans.svg);
+      background-repeat: no-repeat;
+      height: var(--icon-height); }
+  .card__item--suvs {
+    background-color: var(--color-dark-cyan); }
+    .card__item--suvs-icon {
+      background-image: url(../img/icon-suvs.svg);
+      background-repeat: no-repeat;
+      height: var(--icon-height); }
+  .card__item--luxury {
+    background-color: var(--color-very-dark-cyan); }
+    .card__item--luxury-icon {
+      background-image: url(../img/icon-luxury.svg);
+      background-repeat: no-repeat;
+      height: var(--icon-height); }
+
+/* || Typography */
+.heading {
+  font-family: 'Big Shoulders Display', sans-serif;
+  color: var(--color-very-light-gray);
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 3rem 0; }
+
+.paragraph {
+  color: var(--color-transparent-white);
+  line-height: 2.5rem;
+  margin-bottom: 8rem; }
+
+/* || Button */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-very-light-gray);
+  padding: 1.3rem 3rem;
+  border-radius: 2.3rem;
+  transition: all .2s; }
+  .btn--or {
+    border: 2px solid var(--color-bright-orange);
+    color: var(--color-bright-orange); }
+  .btn--cy {
+    border: 2px solid var(--color-dark-cyan);
+    color: var(--color-dark-cyan); }
+  .btn--dc {
+    border: 2px solid var(--color-very-dark-cyan);
+    color: var(--color-very-dark-cyan); }
+  .btn:active {
+    background-color: transparent;
+    color: var(--color-very-light-gray);
+    border: 2px solid var(--color-transparent-white); }

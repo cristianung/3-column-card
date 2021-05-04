@@ -1,0 +1,38 @@
+:root {
+    --color-bright-orange: hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-very-dark-cyan: hsl(179, 100%, 13%);
+    --color-transparent-white: hsla(0, 0%, 100%, 0.75); // (paragraphs) 
+    --color-very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+
+    --icon-height: 4.4rem;
+}
+
+$bp-large: 48.56rem;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
